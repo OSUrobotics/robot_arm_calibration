@@ -14,3 +14,14 @@ The code in this folder is used to reduce the distortion of the web-camera and r
 3. The results of "identify aruco markers in image.py" are in the "result folder". The data file contains the positions and orientations of each ArUco Marker. The resulting image shows the information in the top left corner of the input image.
 4. Besides that, "identify aruco markers in image.py" will create "tranf_world_to_camera.csv" which content is the transform matrix from the world frame to the camera frame.
 * This code refers to Nuha's code and Tiziano Fiorenzani's code (https://github.com/tizianofiorenzani/how_do_drones_work/tree/master/opencv).
+
+## file description
+* image_processing folder: The folder of the processing images for "camera calculation.py"
+* result folder: The folder of result data files and images of "identify aruco markers in image.py"
+* 6.jpg\9.jpg\10.jpg\2020-12-01-133130.jpg\2020-12-01-133142.jpg\2020-12-01-133201.jpg\2020-12-01-140632.jpg: The input images of "identify aruco markers in image.py"
+* calibresult.png: The resulting image of "camera calculation.py"
+* camera calculation.py: The algorithm of camera calibration.
+* camera_mtx.npy: The file which stored the camera matrix of the web-camera.
+* dist_mtx.npy: The file which stored the distortion coefficients of the web-camera.
+* identify aruco markers in image.py: The algorithm to read the information of the ArUco Markers
+* tranf_world_to_camera.csv: The result of "identify aruco markers in image.py" which contains the transform matrix from the world frame to the camera frame.
