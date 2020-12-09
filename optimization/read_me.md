@@ -4,11 +4,15 @@ Gradient descent uses the gradient to determine the direction of deepest ascent 
 
 ### The code depends on the following files present:
 arm_calibration.py: Calculates the arm position to be within the world frame
+
 endEffector_to_world.py: Calculate the end effector location in the world frame
+
 arm_cal/ : Contains the physical joint angles ("joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7") and transformation matrices
 
 ### To run the code:
+
 This code has been run and tested using Python 3 and above.
+
 Make sure all required python libraries are installed (numpy, matplotlib)
 
 **Run the following command:**
@@ -16,6 +20,7 @@ Make sure all required python libraries are installed (numpy, matplotlib)
 
 **Input:**
 Physical joint angles and transformation matrices within arm_cal/
+
 Target end effector location based on the arUco markers
 
 **Output:**
