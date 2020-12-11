@@ -1,7 +1,7 @@
 # Calculate the finger angle
 In this experiment, two methods are used to calculate the angle of the finger. The first method is based on the rotation angle of the ArUco marker. The second method is based on the position of the ArUco marker.
 
-It should be noted that when the ArUco marker reads the rotation angle, the returned angle range is from negative 180 degrees to positive 180 degrees. Also, the angle is negative when rotating homeopathically, and the angle is positive when rotating counterclockwise. If the angle is more than 180 degrees clockwise, the angle will be corrected to the counterclockwise rotation's corresponding angle.
+It should be noted that when the ArUco marker reads the rotation angle, the returned angle range is from negative 180 degrees to positive 180 degrees. Also, the angle is negative when rotating clockwise, and the angle is positive when rotating counterclockwise. If the angle is more than 180 degrees clockwise, the angle will be corrected to the counterclockwise rotation's corresponding angle.
 
 ```Finger_angle.py```: The main code for finger angle calculation  
 ```data_file_6.csv```: Position and angle value in image 6  
