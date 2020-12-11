@@ -7,7 +7,9 @@ arm_calibration.py: Calculates the arm position to be within the world frame
 
 endEffector_to_world.py: Calculate the end effector location in the world frame
 
-arm_cal/ : Contains the physical joint angles ("joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7") and transformation matrices
+final_test/ : Contains all needed transformation matrices and test data
+
+final_test/test/ : Contains test images and transformation matrices
 
 ### To run the code:
 
@@ -15,11 +17,11 @@ This code has been run and tested using Python 3 and above.
 
 Make sure all required python libraries are installed (numpy, matplotlib)
 
-**Run the following command:**
-```python gradient_descent.py```
+**Run the following command along with the Kinova arm visualization code:**
+```rosrun kinova_scripts gradient_descent_ROS.py```
 
 **Input:**
-Physical joint angles and transformation matrices within arm_cal/
+Physical joint angles and transformation matrices
 
 Target end effector location based on the arUco markers
 
