@@ -11,14 +11,14 @@ It should be noted that when the ArUco marker reads the rotation angle, the retu
 ## Based on the rotation angle of the ArUco marker
 The function of this method:```read_aruco_angle``` in ```Finger_angle.py```
 
-In this method, only need to read five ArUco marker rotation angles: palm, finger_1_proxmal, finger_1_distal, finger_2_proxmal, finger_2_distal. Then, calculate the angle difference between each joint and palm to get the finger's opening and closing angle.
+In this method, only need to read five ArUco marker rotation angles: palm, finger_1_proximal, finger_1_distal, finger_2_proximal, finger_2_distal. Then, calculate the angle difference between each joint and palm to get the finger's opening and closing angle.
 
 It is worth noting that there is a 180-degree difference between the two ArUco markers of finger_2 and the ArUco marker of palm in the initial state, so the ArUco marker angle of finger_2 needs to be reinitialized.
 
 ## Based on the position of the ArUco marker
 The function of this method:```read_aruco_position``` in ```Finger_angle.py```
 
-In this method, you only need to read the positions of the five ArUco markers of palm, finger_1_proxmal, finger_1_distal, finger_2_proxmal, and finger_2_distal, and then obtain the angle of the finger according to the relationship between the positions.
+In this method, you only need to read the positions of the five ArUco markers of palm, finger_1_proximal, finger_1_distal, finger_2_proximal, and finger_2_distal, and then obtain the angle of the finger according to the relationship between the positions.
 
 The specific details of the calculation:
 * First move the palm position to the origin position, which is the position of the center point ArUco marker, and move the other fingers to the corresponding positions.
@@ -28,7 +28,7 @@ The specific details of the calculation:
 
 ## Output example
 Test dataset from ```data_file_10.csv```
-* Finger_1_proxmal_angle:
+* Finger_1_proximal_angle:
   * 78.32 (angle from method one)
   * 89.09 (angle from method two)
   * 83.71 (average angle)
@@ -36,7 +36,7 @@ Test dataset from ```data_file_10.csv```
   * 145.6 (angle from method one)
   * 122.2 (angle from method two)
   * 133.9 (average angle)
-* Finger_2_proxmal_angle:
+* Finger_2_proximal_angle:
   * 75.31 (angle from method one)
   * 108.4 (angle from method two)
   * 91.86 (average angle)
