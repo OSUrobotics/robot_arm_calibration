@@ -9,7 +9,7 @@ endEffector_to_world.py: Calculate the end effector location in the world frame
 
 final_test/ : Contains all needed transformation matrices and test data
 
-final_test/test/ : Contains test images and transformation matrices
+final_test/test_data/ : Contains test images and transformation matrices
 
 ### To run the code:
 
