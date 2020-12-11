@@ -13,7 +13,7 @@ final_test/test_data/ : Contains test images and transformation matrices
 
 ### To run the code:
 
-This code has been run and tested using Python 3 and above.
+This code has been run and tested using Python 2
 
 Make sure all required python libraries are installed (numpy, matplotlib)
 
