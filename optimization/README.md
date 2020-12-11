@@ -18,12 +18,15 @@ This code has been run and tested using Python 3 and above.
 Make sure all required python libraries are installed (numpy, matplotlib)
 
 **Run the following command along with the Kinova arm visualization code:**
+
 ```rosrun kinova_scripts gradient_descent_ROS.py```
 
 **Input:**
+
 Physical joint angles and transformation matrices
 
 Target end effector location based on the arUco markers
 
 **Output:**
+
 Optimized joint angle values for each joint and final end effector coordinates
